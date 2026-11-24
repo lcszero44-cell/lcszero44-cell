@@ -5,7 +5,7 @@
 <p align="center">
   <a href="https://github.com/lcszero44-cell"><img src="https://img.shields.io/github/followers/lcszero44-cell?label=Follow&style=for-the-badge&color=00f5ff&logo=github" alt="Follow"></a>
   <a href="https://github.com/lcszero44-cell?tab=repositories"><img src="https://img.shields.io/github/stars/lcszero44-cell?style=for-the-badge&color=a855f7&logo=github" alt="Total Stars"></a>
-  <a href="https://github.com/lcszero44-cell"><img src="https://img.shields.io/badge/Projects-3%20Featured-22c55e?style=for-the-badge&logo=github" alt="Projects"></a>
+  <a href="https://github.com/lcszero44-cell"><img src="https://img.shields.io/badge/Projects-4%20Featured-22c55e?style=for-the-badge&logo=github" alt="Projects"></a>
   <a href="https://github.com/lcszero44-cell"><img src="https://img.shields.io/badge/License-MIT-f472b6?style=for-the-badge" alt="License"></a>
 </p>
 
@@ -41,7 +41,7 @@
 
 ## 🚀 Projetos em Destaque
 
-Três ferramentas **production-ready** que resolvem problemas reais com arquitetura local-first:
+Quatro ferramentas **production-ready** que resolvem problemas reais com arquitetura local-first:
 
 ### 🎬 [ClipRush Studio Pro](https://github.com/lcszero44-cell/ClipRush-Studio-Pro)
 **Estúdio Local de Edição Viral com IA** — Transforma gameplays brutas (PS4/PS5/PC) em **Shorts 9:16 virais** e **Gameplays 16:9 editadas** para YouTube. Motor multimodal híbrido: Áudio RMS + OpenCV Optical Flow + Qwen 3.5 9B Vision (Ollama). **10 mecânicas de retenção viral** integradas no render. Piloto Automático Diário publica 1 Short/dia via YouTube OAuth2.
@@ -81,6 +81,20 @@ Três ferramentas **production-ready** que resolvem problemas reais com arquitet
 <p align="center">
   <a href="https://github.com/lcszero44-cell/nexuszap-pro-local"><img src="https://github-readme-stats.vercel.app/api/pin/?username=lcszero44-cell&repo=nexuszap-pro-local&theme=tokyonight&hide_border=true" width="45%" /></a>
   <a href="https://github.com/lcszero44-cell/nexuszap-pro-local"><img src="https://img.shields.io/github/stars/lcszero44-cell/nexuszap-pro-local?style=for-the-badge&color=00ff88&logo=github" alt="NexusZap Stars" /></a>
+</p>
+
+---
+
+### 🏦 [Sistema Bancário Python](https://github.com/lcszero44-cell/sistema-bancario-python)
+**Core Banking System com Clean Architecture** — Motor financeiro Decimal (`ROUND_HALF_UP`), **Ledger imutável** com protocolo UUID4 (8-char), compliance bancário completo (3 saques/dia, R$ 500/saque, saldo estrito, reset automático à meia-noite), CLI resiliente box-drawing, suíte unittest 100% nativa. **Zero dependências externas**.
+
+| Stack | Destaques |
+|-------|-----------|
+| `Python 3.10+` `decimal.Decimal` `dataclasses` `unittest` `uuid` `re` | Clean Architecture (Domain/UI) • Decimal Financial Standard • Immutable Ledger Audit Trail • Banking Compliance Engine • Zero External Dependencies • 100% Test Coverage |
+
+<p align="center">
+  <a href="https://github.com/lcszero44-cell/sistema-bancario-python"><img src="https://github-readme-stats.vercel.app/api/pin/?username=lcszero44-cell&repo=sistema-bancario-python&theme=tokyonight&hide_border=true" width="45%" /></a>
+  <a href="https://github.com/lcszero44-cell/sistema-bancario-python"><img src="https://img.shields.io/github/stars/lcszero44-cell/sistema-bancario-python?style=for-the-badge&color=0ea5e9&logo=github" alt="Sistema Bancário Stars" /></a>
 </p>
 
 ---
