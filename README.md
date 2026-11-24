@@ -16,7 +16,7 @@
 
 [![GitHub Followers](https://img.shields.io/github/followers/lcszero44-cell?label=Follow&style=for-the-badge&color=00f5ff&logo=github)](https://github.com/lcszero44-cell)
 [![GitHub Stars](https://img.shields.io/github/stars/lcszero44-cell?style=for-the-badge&color=a855f7&logo=github)](https://github.com/lcszero44-cell?tab=repositories)
-[![Projects](https://img.shields.io/badge/Projects-8%20Featured-22c55e?style=for-the-badge&logo=github)](https://github.com/lcszero44-cell?tab=repositories)
+[![Projects](https://img.shields.io/badge/Projects-9%20Featured-22c55e?style=for-the-badge&logo=github)](https://github.com/lcszero44-cell?tab=repositories)
 [![License: MIT](https://img.shields.io/badge/License-MIT-f472b6?style=for-the-badge)](LICENSE)
 
 <br/>
@@ -62,7 +62,7 @@
 
 ---
 
-## 🚀 Portfólio Completo — 8 Projetos em Destaque
+## 🚀 Portfólio Completo — 9 Projetos em Destaque
 
 Organizados em **duas verticais de engenharia** com design visual limpo e badges dinâmicos.
 
@@ -118,9 +118,10 @@ Organizados em **duas verticais de engenharia** com design visual limpo e badges
 
 | # | Projeto | Descrição | Stack | Destaques Técnicos |
 |:---:|:---|:---|:---|:---|
-| **6** | **[ClipRush Studio Pro](https://github.com/lcszero44-cell/ClipRush-Studio-Pro)** | Estúdio multimodal automatizado com IA para produção de vídeos curtos narrados, pipeline FFmpeg e renderização em lote | `Python 3.12` `FastAPI` `OpenCV` `Ollama` `FFmpeg` `faster-whisper` `Playwright` | **100% Offline** • **OpenCV Optical Flow** • **Qwen 3.5 9B Vision** • **10 mecânicas viral** • **Piloto Automático Diário** • **Botão "Refazer" via IA** |
-| **7** | **[AeroDisk Radar](https://github.com/lcszero44-cell/AeroDisk-Radar)** | Otimizador Windows/Win32 avançado: RAM Trim nativo, Storage Radar, migração SSD→HDD com Junctions Atômicas | `Python 3.10+` `FastAPI` `Ollama` `Win32 API` `psutil` `pywebview` `pystray` `D3.js v7` `Inno Setup` | **EmptyWorkingSet nativo** • **Junctions Atômicas + Restore Point** • **BLAKE2b head+tail 64KB** • **Escudos permanentes** • **Executável ~27MB** |
-| **8** | **[NexusZap Pro Local](https://github.com/lcszero44-cell/nexuszap-pro-local)** | Plataforma local-first de automação WhatsApp integrando Baileys, n8n e LLMs locais (Ollama/Llama) | `Node.js 20+` `Express` `Socket.io` `Baileys` `React 18` `Vite 5` `Tailwind 3` `HMAC-SHA256` | **Multi-sessão isolada** • **Webhook assinado n8n** • **Retentativa exponencial + DLQ** • **QR no painel** • **Bind `127.0.0.1:3333`** |
+| **6** | **[AI Customer Support Agent Architect](https://github.com/lcszero44-cell/ai-customer-support-agent-architect)** | Engenharia de Prompts de Produção, Guardrails Anti-Alucinação, Proteção LGPD, Handoff Humano e Simulador Python Auditável | `Python 3.11+` `FastAPI` `Ollama` `Llama` `Pydantic v2` `pytest` `Structured Outputs` | **Prompt Engineering produção** • **Guardrails Anti-Alucinação** • **LGPD by Design** • **Handoff Humano** • **Simulador Auditável** • **Zero Telemetria** |
+| **7** | **[ClipRush Studio Pro](https://github.com/lcszero44-cell/ClipRush-Studio-Pro)** | Estúdio multimodal automatizado com IA para produção de vídeos curtos narrados, pipeline FFmpeg e renderização em lote | `Python 3.12` `FastAPI` `OpenCV` `Ollama` `FFmpeg` `faster-whisper` `Playwright` | **100% Offline** • **OpenCV Optical Flow** • **Qwen 3.5 9B Vision** • **10 mecânicas viral** • **Piloto Automático Diário** • **Botão "Refazer" via IA** |
+| **8** | **[AeroDisk Radar](https://github.com/lcszero44-cell/AeroDisk-Radar)** | Otimizador Windows/Win32 avançado: RAM Trim nativo, Storage Radar, migração SSD→HDD com Junctions Atômicas | `Python 3.10+` `FastAPI` `Ollama` `Win32 API` `psutil` `pywebview` `pystray` `D3.js v7` `Inno Setup` | **EmptyWorkingSet nativo** • **Junctions Atômicas + Restore Point** • **BLAKE2b head+tail 64KB** • **Escudos permanentes** • **Executável ~27MB** |
+| **9** | **[NexusZap Pro Local](https://github.com/lcszero44-cell/nexuszap-pro-local)** | Plataforma local-first de automação WhatsApp integrando Baileys, n8n e LLMs locais (Ollama/Llama) | `Node.js 20+` `Express` `Socket.io` `Baileys` `React 18` `Vite 5` `Tailwind 3` `HMAC-SHA256` | **Multi-sessão isolada** • **Webhook assinado n8n** • **Retentativa exponencial + DLQ** • **QR no painel** • **Bind `127.0.0.1:3333`** |
 
 </div>
 
@@ -128,6 +129,10 @@ Organizados em **duas verticais de engenharia** com design visual limpo e badges
 <summary><strong>🔗 Badges Dinâmicos — Bloco B</strong></summary>
 
 <div align="center">
+
+**[AI Customer Support Agent Architect]**
+[![AI Agent Pin](https://github-readme-stats.vercel.app/api/pin/?username=lcszero44-cell&repo=ai-customer-support-agent-architect&theme=tokyonight&hide_border=true&bg_color=030712&title_color=00f5ff&icon_color=a855f7&text_color=e2e8f0&border_radius=8)](https://github.com/lcszero44-cell/ai-customer-support-agent-architect)
+[![AI Agent Stars](https://img.shields.io/github/stars/lcszero44-cell/ai-customer-support-agent-architect?style=for-the-badge&color=00f5ff&logo=github)](https://github.com/lcszero44-cell/ai-customer-support-agent-architect)
 
 **[ClipRush Studio Pro]**
 [![ClipRush Pin](https://github-readme-stats.vercel.app/api/pin/?username=lcszero44-cell&repo=ClipRush-Studio-Pro&theme=tokyonight&hide_border=true&bg_color=030712&title_color=00f5ff&icon_color=a855f7&text_color=e2e8f0&border_radius=8)](https://github.com/lcszero44-cell/ClipRush-Studio-Pro)
