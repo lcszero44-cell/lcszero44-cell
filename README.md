@@ -1,14 +1,13 @@
 <div align="center">
-  <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:0f172a,50:1e3a8a,100:0284c7&height=210&section=header&text=Lucas%20Henrique%20Abreu%20da%20Rocha&fontSize=36&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Full-Stack%20Developer%20%7C%20AI%20Automation%20%26%20Software%20Architecture&descAlignY=58&descSize=16" />
-</div>
 
-<div align="center">
-  <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&pause=1000&color=38BDF8&center=true&vCenter=true&width=750&lines=Construindo+sistemas+escal%C3%A1veis%2C+dashboards+e+agentes+de+IA;Arquitetura+Full-Stack+com+Python%2C+FastAPI%2C+React+e+Firebase;Automa%C3%A7%C3%A3o+inteligente+com+LLMs+locais%2C+Vis%C3%A3o+Computacional+e+n8n" alt="Typing SVG" />
-  </a>
-</div>
+# Lucas Henrique Abreu da Rocha
+### Full-Stack Developer | AI Automation & Software Architecture
 
-<p align="center">
+<a href="https://git.io/typing-svg">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=19&pause=1000&color=38BDF8&center=true&vCenter=true&width=820&lines=Construindo+sistemas+escal%C3%A1veis%2C+dashboards+e+agentes+de+IA;Arquitetura+Full-Stack+com+Python%2C+FastAPI%2C+React+e+Firebase;Automa%C3%A7%C3%A3o+inteligente+com+LLMs+locais%2C+Vis%C3%A3o+Computacional+e+n8n" alt="Typing SVG" />
+</a>
+
+<p>
   <a href="https://github.com/lcszero44-cell">
     <img src="https://img.shields.io/badge/GitHub-lcszero44--cell-0F172A?style=for-the-badge&logo=github&logoColor=white" />
   </a>
@@ -17,6 +16,8 @@
   </a>
   <img src="https://komarev.com/ghpvc/?username=lcszero44-cell&label=Visualiza%C3%A7%C3%B5es&color=0284c7&style=for-the-badge" alt="Profile Views" />
 </p>
+
+</div>
 
 ---
 
@@ -70,22 +71,3 @@ Sou **Desenvolvedor Full-Stack e Arquiteto de Soluções em Inteligência Artifi
 | **🎬 ClipRush Studio Pro** | `FastAPI` • `OpenCV` • `Whisper` • `Qwen Vision` • `FFmpeg` | Pipeline de IA desktop que detecta picos de ação e diálogo em vídeos para gerar cortes verticais automatizados com metadados calibrados. |
 | **🤖 Agentes Autônomos Omnichannel** | `n8n` • `Ollama (Llama)` • `Webhooks` | Ecossistema de atendimento e agendamento inteligente com processamento de linguagem natural local integrado ao WhatsApp. |
 | **⚡ AeroDisk Radar** | `Python` • `Windows Internals` | Utilitário de engenharia de performance para monitoramento de hardware, limpeza de memória RAM e migração segura de repositórios entre SSD e HDD. |
-
----
-
-### 📈 Métricas & Atividade no GitHub
-
-<div align="center">
-  <img height="175em" src="https://github-readme-stats.vercel.app/api?username=lcszero44-cell&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&border_color=1e3a8a" />
-  <img height="175em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=lcszero44-cell&layout=compact&langs_count=8&theme=tokyonight&border_color=1e3a8a" />
-</div>
-
-<div align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=lcszero44-cell&theme=tokyonight&border=1e3a8a" alt="GitHub Streak" />
-</div>
-
----
-
-<div align="center">
-  <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:0284c7,50:1e3a8a,100:0f172a&height=110&section=footer" />
-</div>
