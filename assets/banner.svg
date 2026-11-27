@@ -1,6 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 420" width="1440" height="420">
   <defs>
-    <!-- Gradientes cyber-dark profundos -->
     <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" style="stop-color:#030712"/>
       <stop offset="25%" style="stop-color:#060d1a"/>
@@ -33,10 +32,10 @@
       <stop offset="100%" style="stop-color:#c2410c"/>
     </linearGradient>
 
-    <linearGradient id="pinkGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:#f472b6"/>
-      <stop offset="50%" style="stop-color:#ec4899"/>
-      <stop offset="100%" style="stop-color:#db2777"/>
+    <linearGradient id="redGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#ef4444"/>
+      <stop offset="50%" style="stop-color:#dc2626"/>
+      <stop offset="100%" style="stop-color:#b91c1c"/>
     </linearGradient>
 
     <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="0%">
@@ -105,7 +104,6 @@
       <stop offset="100%" style="stop-color:#f97316" stop-opacity="0"/>
     </linearGradient>
 
-    <!-- Filtros de glow -->
     <filter id="glowStrong" x="-50%" y="-50%" width="200%" height="200%">
       <feGaussianBlur stdDeviation="12" result="blur"/>
       <feMerge>
@@ -142,6 +140,16 @@
       </feMerge>
     </filter>
 
+    <filter id="redGlow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feFlood flood-color="#ef4444" flood-opacity="0.8" result="glowColor"/>
+      <feComposite in="glowColor" in2="blur" operator="in" result="glow"/>
+      <feMerge>
+        <feMergeNode in="glow"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
     <filter id="textNeon" x="-30%" y="-30%" width="160%" height="160%">
       <feGaussianBlur stdDeviation="4" result="blur"/>
       <feFlood flood-color="#00f5ff" flood-opacity="0.9" result="glowColor"/>
@@ -166,13 +174,12 @@
       </feMerge>
     </filter>
 
-    <!-- Grid isométrico animado -->
     <pattern id="isoGrid" width="60" height="60" patternUnits="userSpaceOnUse">
-      <path d="M30,0 L60,21 L60,63 L30,84 L0,63 L0,21 Z" fill="none" stroke="#00f5ff" stroke-width="0.4" opacity="0.08"/>
-      <animate attributeName="opacity" values="0.08;0.15;0.08" dur="4s" repeatCount="indefinite"/>
+      <path d="M30,0 L60,21 L60,63 L30,84 L0,63 L0,21 Z" fill="none" stroke="#00f5ff" stroke-width="0.4" opacity="0.08">
+        <animate attributeName="opacity" values="0.08;0.15;0.08" dur="4s" repeatCount="indefinite"/>
+      </path>
     </pattern>
 
-    <!-- Circuit pattern -->
     <pattern id="circuitPattern" width="100" height="100" patternUnits="userSpaceOnUse">
       <rect x="0" y="50" width="100" height="1" fill="url(#cyanGradient)" opacity="0.04"/>
       <rect x="50" y="0" width="1" height="100" fill="url(#purpleGradient)" opacity="0.04"/>
@@ -180,18 +187,15 @@
       <rect x="45" y="45" width="10" height="10" fill="none" stroke="url(#purpleGradient)" stroke-width="0.4" opacity="0.05"/>
     </pattern>
 
-    <!-- Hex pattern -->
     <pattern id="hexPattern" width="70" height="70" patternUnits="userSpaceOnUse">
       <path d="M35,0 L63,20.2 L63,70 L35,90.2 L7,70 L7,20.2 Z" fill="none" stroke="#a855f7" stroke-width="0.3" opacity="0.05"/>
     </pattern>
 
-    <!-- Noise texture -->
     <filter id="noise" x="0%" y="0%" width="100%" height="100%">
       <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="4" stitchTiles="stitch" result="noise"/>
       <feColorMatrix type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.02 0" in="noise" result="noiseAlpha"/>
     </filter>
 
-    <!-- Markers para setas de fluxo -->
     <marker id="flowArrow1" markerWidth="12" markerHeight="8" refX="11" refY="4" orient="auto">
       <polygon points="0 0, 12 4, 0 8" fill="url(#dataFlow1)"/>
     </marker>
@@ -210,20 +214,15 @@
     </clipPath>
   </defs>
 
-  <!-- Background base -->
   <rect width="1440" height="420" fill="url(#bgGradient)"/>
-
-  <!-- Noise overlay -->
   <rect width="1440" height="420" filter="url(#noise)" opacity="0.015"/>
 
-  <!-- Camadas de padrão animadas -->
   <g opacity="0.4">
     <rect width="1440" height="420" fill="url(#isoGrid)"/>
     <rect width="1440" height="420" fill="url(#circuitPattern)"/>
     <rect width="1440" height="420" fill="url(#hexPattern)"/>
   </g>
 
-  <!-- Partículas flutuantes globais -->
   <g opacity="0.6" filter="url(#glowSoft)">
     <circle cx="120" cy="60" r="3" fill="#00f5ff">
       <animate attributeName="cy" values="60;35;60" dur="3.5s" repeatCount="indefinite"/>
@@ -246,7 +245,7 @@
       <animate attributeName="cy" values="50;25;50" dur="3.2s" repeatCount="indefinite"/>
       <animate attributeName="opacity" values="0.3;0.9;0.3" dur="3.2s" repeatCount="indefinite"/>
     </circle>
-    <circle cx="1180" cy="90" r="2" fill="#f472b6">
+    <circle cx="1180" cy="90" r="2" fill="#ef4444">
       <animate attributeName="cy" values="90;65;90" dur="4.2s" repeatCount="indefinite"/>
       <animate attributeName="opacity" values="0.2;0.8;0.2" dur="4.2s" repeatCount="indefinite"/>
     </circle>
@@ -272,60 +271,47 @@
     </circle>
   </g>
 
-  <!-- Linhas de fluxo de dados animadas conectando hub aos núcleos -->
   <g filter="url(#glowSoft)" stroke-width="2" opacity="0.4" stroke-dasharray="15,10">
-    <!-- Fluxo para Core 1 (AI &amp; Multimodal) - Cyan -->
-    <path d="M480,190 Q420,150 350,130" fill="none" stroke="url(#dataFlow1)" marker-end="url(#flowArrow1)">
+    <path d="M320,190 Q280,150 220,130" fill="none" stroke="url(#dataFlow1)" marker-end="url(#flowArrow1)">
       <animate attributeName="stroke-dashoffset" values="0;50" dur="2s" repeatCount="indefinite"/>
     </path>
-    <path d="M480,210 Q420,170 350,170" fill="none" stroke="url(#dataFlow1)" marker-end="url(#flowArrow1)" opacity="0.3">
+    <path d="M320,210 Q280,170 220,170" fill="none" stroke="url(#dataFlow1)" marker-end="url(#flowArrow1)" opacity="0.3">
       <animate attributeName="stroke-dashoffset" values="25;75" dur="2s" repeatCount="indefinite"/>
     </path>
 
-    <!-- Fluxo para Core 2 (System &amp; Win32) - Purple -->
-    <path d="M640,190 Q600,140 530,130" fill="none" stroke="url(#dataFlow2)" marker-end="url(#flowArrow2)">
+    <path d="M560,190 Q530,140 470,130" fill="none" stroke="url(#dataFlow2)" marker-end="url(#flowArrow2)">
       <animate attributeName="stroke-dashoffset" values="10;60" dur="2s" repeatCount="indefinite"/>
     </path>
-    <path d="M640,210 Q600,180 530,170" fill="none" stroke="url(#dataFlow2)" marker-end="url(#flowArrow2)" opacity="0.3">
+    <path d="M560,210 Q530,180 470,170" fill="none" stroke="url(#dataFlow2)" marker-end="url(#flowArrow2)" opacity="0.3">
       <animate attributeName="stroke-dashoffset" values="35;85" dur="2s" repeatCount="indefinite"/>
     </path>
 
-    <!-- Fluxo para Core 3 (WhatsApp &amp; Automation) - Green -->
-    <path d="M800,190 Q840,140 910,130" fill="none" stroke="url(#dataFlow3)" marker-end="url(#flowArrow3)">
+    <path d="M880,190 Q920,140 990,130" fill="none" stroke="url(#dataFlow3)" marker-end="url(#flowArrow3)">
       <animate attributeName="stroke-dashoffset" values="20;70" dur="2s" repeatCount="indefinite"/>
     </path>
-    <path d="M800,210 Q840,180 910,170" fill="none" stroke="url(#dataFlow3)" marker-end="url(#flowArrow3)" opacity="0.3">
+    <path d="M880,210 Q920,180 990,170" fill="none" stroke="url(#dataFlow3)" marker-end="url(#flowArrow3)" opacity="0.3">
       <animate attributeName="stroke-dashoffset" values="45;95" dur="2s" repeatCount="indefinite"/>
     </path>
 
-    <!-- Fluxo para Core 4 (Enterprise Python APIs) - Orange -->
-    <path d="M960,190 Q1000,150 1070,130" fill="none" stroke="url(#dataFlow4)" marker-end="url(#flowArrow4)">
+    <path d="M1120,190 Q1160,150 1230,130" fill="none" stroke="url(#dataFlow4)" marker-end="url(#flowArrow4)">
       <animate attributeName="stroke-dashoffset" values="5;55" dur="2s" repeatCount="indefinite"/>
     </path>
-    <path d="M960,210 Q1000,190 1070,170" fill="none" stroke="url(#dataFlow4)" marker-end="url(#flowArrow4)" opacity="0.3">
+    <path d="M1120,210 Q1160,190 1230,170" fill="none" stroke="url(#dataFlow4)" marker-end="url(#flowArrow4)" opacity="0.3">
       <animate attributeName="stroke-dashoffset" values="30;80" dur="2s" repeatCount="indefinite"/>
     </path>
   </g>
 
-  <!-- Núcleo Central (Hub) - 3D Isométrico -->
   <g transform="translate(720, 200)" filter="url(#dropShadow3D)">
-    <!-- Base octogonal do hub -->
     <polygon points="0,-50 45,-30 75,0 45,30 0,50 -45,30 -75,0 -45,-30" fill="url(#hubGradient)" stroke="url(#cyanGradient)" stroke-width="3" opacity="0.95" filter="url(#glowStrong)">
       <animate attributeName="stroke-width" values="3;4;3" dur="3s" repeatCount="indefinite"/>
     </polygon>
-
-    <!-- Camada interna do hub -->
     <polygon points="0,-40 35,-22 60,0 35,22 0,40 -35,22 -60,0 -35,-22" fill="none" stroke="url(#purpleGradient)" stroke-width="1.5" opacity="0.7" stroke-dasharray="8,6">
       <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="20s" repeatCount="indefinite"/>
     </polygon>
-
-    <!-- Núcleo pulsante central -->
     <circle cx="0" cy="0" r="28" fill="url(#hubGradient)" stroke="url(#cyanGradient)" stroke-width="2" opacity="0.9">
       <animate attributeName="r" values="28;32;28" dur="2s" repeatCount="indefinite"/>
       <animate attributeName="stroke-width" values="2;3;2" dur="2s" repeatCount="indefinite"/>
     </circle>
-
-    <!-- Anéis orbitais -->
     <g filter="url(#glowSoft)">
       <ellipse cx="0" cy="0" rx="50" ry="20" fill="none" stroke="url(#cyanGradient)" stroke-width="1.5" opacity="0.5" stroke-dasharray="10,8">
         <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="12s" repeatCount="indefinite"/>
@@ -337,8 +323,6 @@
         <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="18s" repeatCount="indefinite"/>
       </ellipse>
     </g>
-
-    <!-- Partículas de energia no hub -->
     <g>
       <circle cx="0" cy="0" r="4" fill="#00f5ff">
         <animate attributeName="r" values="4;8;4" dur="1.5s" repeatCount="indefinite"/>
@@ -359,55 +343,41 @@
     </g>
   </g>
 
-  <!-- 4 Núcleos Isométricos Conectados -->
-
-  <!-- Core 1: AI &amp; Multimodal (Cyan) - Top-Left -->
-  <g transform="translate(200, 110)" filter="url(#dropShadow3D)">
-    <polygon points="0,35 40,0 80,35 40,70" fill="url(#coreGradient1)" stroke="url(#cyanGradient)" stroke-width="2.5" opacity="0.95"/>
-    <polygon points="40,0 80,35 40,70 0,35" fill="url(#coreGradient1)" stroke="url(#cyanGradient)" stroke-width="2" opacity="0.8"/>
-    <polygon points="0,35 40,70 0,105 -40,70" fill="url(#coreGradient1)" stroke="url(#cyanGradient)" stroke-width="2" opacity="0.7"/>
-
-    <!-- Face frontal com ícone de IA -->
+  <g transform="translate(140, 110)" filter="url(#dropShadow3D)">
+    <polygon points="0,35 40,0 80,35 40,70" fill="url(#coreGradient1)" stroke="url(#redGradient)" stroke-width="2.5" opacity="0.95"/>
+    <polygon points="40,0 80,35 40,70 0,35" fill="url(#coreGradient1)" stroke="url(#redGradient)" stroke-width="2" opacity="0.8"/>
+    <polygon points="0,35 40,70 0,105 -40,70" fill="url(#coreGradient1)" stroke="url(#redGradient)" stroke-width="2" opacity="0.7"/>
     <g transform="translate(-30, -20)" filter="url(#glowSoft)">
-      <rect x="0" y="0" width="60" height="50" rx="4" fill="#020617" stroke="url(#cyanGradient)" stroke-width="1.5" opacity="0.9"/>
-      <text x="30" y="20" font-family="'JetBrains Mono', monospace" font-weight="700" font-size="16" fill="#00f5ff" text-anchor="middle">AI</text>
-      <text x="30" y="38" font-family="'JetBrains Mono', monospace" font-weight="400" font-size="8" fill="#67e8f9" text-anchor="middle">MULTIMODAL</text>
-      <!-- Neural network visual -->
+      <rect x="0" y="0" width="60" height="50" rx="4" fill="#020617" stroke="url(#redGradient)" stroke-width="1.5" opacity="0.9"/>
+      <text x="30" y="20" font-family="'JetBrains Mono', monospace" font-weight="700" font-size="16" fill="#f87171" text-anchor="middle">SEC</text>
+      <text x="30" y="38" font-family="'JetBrains Mono', monospace" font-weight="400" font-size="8" fill="#ef4444" text-anchor="middle">OPS</text>
       <g transform="translate(30, 15)" opacity="0.7">
-        <circle cx="-15" cy="-8" r="3" fill="#00f5ff">
-          <animate attributeName="opacity" values="0.5;1;0.5" dur="1s" repeatCount="indefinite"/>
+        <path d="M0,-12 L12,-4 L12,8 L0,14 L-12,8 L-12,-4 Z" fill="none" stroke="#f87171" stroke-width="1.5">
+          <animate attributeName="stroke-dashoffset" values="0;40" dur="2s" repeatCount="indefinite"/>
+        </path>
+        <circle cx="0" cy="0" r="3" fill="#f87171">
+          <animate attributeName="r" values="3;5;3" dur="1.5s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0.5;1;0.5" dur="1.5s" repeatCount="indefinite"/>
         </circle>
-        <circle cx="0" cy="0" r="3" fill="#a855f7">
-          <animate attributeName="opacity" values="1;0.5;1" dur="1.2s" repeatCount="indefinite"/>
-        </circle>
-        <circle cx="15" cy="-8" r="3" fill="#22c55e">
-          <animate attributeName="opacity" values="0.5;1;0.5" dur="1.4s" repeatCount="indefinite"/>
-        </circle>
-        <line x1="-15" y1="-8" x2="0" y2="0" stroke="#00f5ff" stroke-width="1" opacity="0.5"/>
-        <line x1="0" y1="0" x2="15" y2="-8" stroke="#00f5ff" stroke-width="1" opacity="0.5"/>
       </g>
     </g>
-
-    <text x="40" y="130" font-family="'JetBrains Mono', monospace" font-weight="600" font-size="11" fill="#67e8f9" text-anchor="middle">AI &amp; Multimodal</text>
+    <text x="40" y="130" font-family="'JetBrains Mono', monospace" font-weight="600" font-size="11" fill="#f87171" text-anchor="middle">Cybersecurity &amp;   DevSecOps</text>
   </g>
 
-  <!-- Core 2: System &amp; Win32 (Purple) - Top-Right of center-left -->
-  <g transform="translate(420, 110)" filter="url(#dropShadow3D)">
+  <g transform="translate(400, 110)" filter="url(#dropShadow3D)">
     <polygon points="0,35 40,0 80,35 40,70" fill="url(#coreGradient2)" stroke="url(#purpleGradient)" stroke-width="2.5" opacity="0.95"/>
     <polygon points="40,0 80,35 40,70 0,35" fill="url(#coreGradient2)" stroke="url(#purpleGradient)" stroke-width="2" opacity="0.8"/>
     <polygon points="0,35 40,70 0,105 -40,70" fill="url(#coreGradient2)" stroke="url(#purpleGradient)" stroke-width="2" opacity="0.7"/>
-
     <g transform="translate(-30, -20)" filter="url(#glowSoft)">
       <rect x="0" y="0" width="60" height="50" rx="4" fill="#020617" stroke="url(#purpleGradient)" stroke-width="1.5" opacity="0.9"/>
-      <text x="30" y="20" font-family="'JetBrains Mono', monospace" font-weight="700" font-size="14" fill="#c084fc" text-anchor="middle">SYS</text>
+      <text x="30" y="20" font-family="'JetBrains Mono', monospace" font-weight="700" font-size="14" fill="#c084fc" text-anchor="middle">AI</text>
       <text x="30" y="38" font-family="'JetBrains Mono', monospace" font-weight="400" font-size="8" fill="#a855f7" text-anchor="middle">WIN32</text>
-      <!-- Gear/Win32 visual -->
       <g transform="translate(30, 15)" opacity="0.7">
         <circle cx="0" cy="0" r="10" fill="none" stroke="#a855f7" stroke-width="1.5">
           <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="6s" repeatCount="indefinite"/>
         </circle>
         <circle cx="0" cy="0" r="5" fill="none" stroke="#c084fc" stroke-width="1"/>
-        <g transform="rotate(0)">
+        <g>
           <line x1="0" y1="-10" x2="0" y2="-14" stroke="#a855f7" stroke-width="2" stroke-linecap="round">
             <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="6s" repeatCount="indefinite"/>
           </line>
@@ -423,48 +393,43 @@
         </g>
       </g>
     </g>
-
-    <text x="40" y="130" font-family="'JetBrains Mono', monospace" font-weight="600" font-size="11" fill="#c084fc" text-anchor="middle">System &amp; Win32</text>
+    <text x="40" y="130" font-family="'JetBrains Mono', monospace" font-weight="600" font-size="11" fill="#c084fc" text-anchor="middle">Local-First AI &amp;   Win32</text>
   </g>
 
-  <!-- Core 3: WhatsApp &amp; Automation (Green) - Top-Right of center-right -->
-  <g transform="translate(980, 110)" filter="url(#dropShadow3D)">
+  <g transform="translate(1000, 110)" filter="url(#dropShadow3D)">
     <polygon points="0,35 40,0 80,35 40,70" fill="url(#coreGradient3)" stroke="url(#greenGradient)" stroke-width="2.5" opacity="0.95"/>
     <polygon points="40,0 80,35 40,70 0,35" fill="url(#coreGradient3)" stroke="url(#greenGradient)" stroke-width="2" opacity="0.8"/>
     <polygon points="0,35 40,70 0,105 -40,70" fill="url(#coreGradient3)" stroke="url(#greenGradient)" stroke-width="2" opacity="0.7"/>
-
     <g transform="translate(-30, -20)" filter="url(#glowSoft)">
       <rect x="0" y="0" width="60" height="50" rx="4" fill="#020617" stroke="url(#greenGradient)" stroke-width="1.5" opacity="0.9"/>
-      <text x="30" y="20" font-family="'JetBrains Mono', monospace" font-weight="700" font-size="14" fill="#4ade80" text-anchor="middle">WA</text>
-      <text x="30" y="38" font-family="'JetBrains Mono', monospace" font-weight="400" font-size="8" fill="#22c55e" text-anchor="middle">AUTO</text>
-      <!-- WhatsApp/Message visual -->
+      <text x="30" y="20" font-family="'JetBrains Mono', monospace" font-weight="700" font-size="14" fill="#4ade80" text-anchor="middle">DATA</text>
+      <text x="30" y="38" font-family="'JetBrains Mono', monospace" font-weight="400" font-size="8" fill="#22c55e" text-anchor="middle">MCP</text>
       <g transform="translate(30, 15)" opacity="0.7">
-        <path d="M-12,-8 L12,-8 L12,8 L2,8 L0,12 L-2,8 L-12,8 Z" fill="none" stroke="#22c55e" stroke-width="1.5">
-          <animate attributeName="stroke-dashoffset" values="0;30" dur="2s" repeatCount="indefinite"/>
+        <path d="M-12,8 L-4,-2 L0,4 L4,-4 L12,-8" fill="none" stroke="#22c55e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <animate attributeName="stroke-dashoffset" values="0;40" dur="2s" repeatCount="indefinite"/>
         </path>
-        <circle cx="-4" cy="-2" r="1.5" fill="#4ade80">
+        <circle cx="-8" cy="2" r="2" fill="#4ade80">
           <animate attributeName="opacity" values="0.5;1;0.5" dur="1s" repeatCount="indefinite"/>
         </circle>
-        <circle cx="4" cy="-2" r="1.5" fill="#4ade80">
+        <circle cx="0" cy="-2" r="2" fill="#4ade80">
           <animate attributeName="opacity" values="1;0.5;1" dur="1.2s" repeatCount="indefinite"/>
+        </circle>
+        <circle cx="8" cy="-6" r="2" fill="#4ade80">
+          <animate attributeName="opacity" values="0.5;1;0.5" dur="1.4s" repeatCount="indefinite"/>
         </circle>
       </g>
     </g>
-
-    <text x="40" y="130" font-family="'JetBrains Mono', monospace" font-weight="600" font-size="11" fill="#4ade80" text-anchor="middle">WhatsApp &amp; Automation</text>
+    <text x="40" y="130" font-family="'JetBrains Mono', monospace" font-weight="600" font-size="11" fill="#4ade80" text-anchor="middle">Data Ops, BI &amp;   MCP</text>
   </g>
 
-  <!-- Core 4: Enterprise Python APIs (Orange) - Top-Right -->
-  <g transform="translate(1200, 110)" filter="url(#dropShadow3D)">
+  <g transform="translate(1260, 110)" filter="url(#dropShadow3D)">
     <polygon points="0,35 40,0 80,35 40,70" fill="url(#coreGradient4)" stroke="url(#orangeGradient)" stroke-width="2.5" opacity="0.95"/>
     <polygon points="40,0 80,35 40,70 0,35" fill="url(#coreGradient4)" stroke="url(#orangeGradient)" stroke-width="2" opacity="0.8"/>
     <polygon points="0,35 40,70 0,105 -40,70" fill="url(#coreGradient4)" stroke="url(#orangeGradient)" stroke-width="2" opacity="0.7"/>
-
     <g transform="translate(-30, -20)" filter="url(#glowSoft)">
       <rect x="0" y="0" width="60" height="50" rx="4" fill="#020617" stroke="url(#orangeGradient)" stroke-width="1.5" opacity="0.9"/>
       <text x="30" y="20" font-family="'JetBrains Mono', monospace" font-weight="700" font-size="14" fill="#fb923c" text-anchor="middle">API</text>
-      <text x="30" y="38" font-family="'JetBrains Mono', monospace" font-weight="400" font-size="8" fill="#f97316" text-anchor="middle">ENTERPRISE</text>
-      <!-- API/Database visual -->
+      <text x="30" y="38" font-family="'JetBrains Mono', monospace" font-weight="400" font-size="8" fill="#f97316" text-anchor="middle">TDD</text>
       <g transform="translate(30, 15)" opacity="0.7">
         <rect x="-12" y="-8" width="24" height="18" rx="2" fill="none" stroke="#f97316" stroke-width="1.5"/>
         <line x1="-12" y1="-2" x2="12" y2="-2" stroke="#fb923c" stroke-width="1"/>
@@ -477,11 +442,9 @@
         </circle>
       </g>
     </g>
-
-    <text x="40" y="130" font-family="'JetBrains Mono', monospace" font-weight="600" font-size="11" fill="#fb923c" text-anchor="middle">Enterprise Python APIs</text>
+    <text x="40" y="130" font-family="'JetBrains Mono', monospace" font-weight="600" font-size="11" fill="#fb923c" text-anchor="middle">Back-End Enterprise &amp;   TDD</text>
   </g>
 
-  <!-- Texto Principal: LUCAS HENRIQUE // FULL-STACK &amp; BACK-END ARCHITECT -->
   <g transform="translate(100, 75)" filter="url(#textNeon)">
     <text x="0" y="0" font-family="'Segoe UI', 'SF Pro Display', 'Roboto', sans-serif"
           font-weight="900" font-size="48" letter-spacing="-0.5" fill="url(#textGradient)"
@@ -490,7 +453,6 @@
     </text>
   </g>
 
-  <!-- Separador // -->
   <g transform="translate(580, 75)" filter="url(#glowSoft)">
     <text x="0" y="0" font-family="'JetBrains Mono', 'Fira Code', monospace"
           font-weight="700" font-size="48" letter-spacing="2" fill="url(#purpleGradient)"
@@ -499,83 +461,78 @@
     </text>
   </g>
 
-  <!-- Título profissional -->
   <g transform="translate(680, 75)" filter="url(#textNeon)">
     <text x="0" y="0" font-family="'Segoe UI', 'SF Pro Display', 'Roboto', sans-serif"
-          font-weight="700" font-size="28" letter-spacing="1" fill="url(#cyanGradient)"
+          font-weight="700" font-size="26" letter-spacing="1" fill="url(#cyanGradient)"
           clip-path="url(#textClip)">
-      FULL-STACK &amp; BACK-END ARCHITECT
+      FULL-STACK ARCHITECT &amp;   CYBERSECURITY SPECIALIST
     </text>
   </g>
 
-  <!-- Subtítulo / Tagline -->
   <g transform="translate(100, 125)" opacity="0.85">
     <text x="0" y="0" font-family="'Segoe UI', 'SF Pro Display', 'Roboto', sans-serif"
-          font-weight="400" font-size="16" letter-spacing="0.5" fill="#94a3b8"
+          font-weight="400" font-size="15" letter-spacing="0.5" fill="#94a3b8"
           clip-path="url(#textClip)">
-      Local-First Architecture &amp;bull; High-Concurrency Async APIs &amp;bull; AI-Powered Automation &amp;bull; Zero-Config Deploy
+      Local-First Architecture &amp;bull; High-Concurrency Async APIs &amp;bull; Blue Team / DevSecOps &amp;bull; AI-Powered Automation
     </text>
   </g>
 
-  <!-- Badges integrados no banner -->
   <g transform="translate(100, 160)">
-    <!-- Badge ZERO-CONFIG -->
     <g filter="url(#glowSoft)">
       <rect x="0" y="0" width="150" height="34" rx="17" fill="#0f172a" stroke="#00f5ff" stroke-width="2" opacity="0.95"/>
       <text x="75" y="23" font-family="'JetBrains Mono', 'Fira Code', monospace"
             font-weight="700" font-size="12" fill="#00f5ff" text-anchor="middle">ZERO-CONFIG</text>
     </g>
-    <!-- Badge HIGH CONCURRENCY -->
     <g transform="translate(160, 0)" filter="url(#glowSoft)">
       <rect x="0" y="0" width="190" height="34" rx="17" fill="#0f172a" stroke="#a855f7" stroke-width="2" opacity="0.95"/>
       <text x="95" y="23" font-family="'JetBrains Mono', 'Fira Code', monospace"
             font-weight="700" font-size="12" fill="#a855f7" text-anchor="middle">HIGH CONCURRENCY</text>
     </g>
-    <!-- Badge TDD &amp; CI/CD -->
     <g transform="translate(360, 0)" filter="url(#glowSoft)">
       <rect x="0" y="0" width="170" height="34" rx="17" fill="#0f172a" stroke="#22c55e" stroke-width="2" opacity="0.95"/>
       <text x="85" y="23" font-family="'JetBrains Mono', 'Fira Code', monospace"
-            font-weight="700" font-size="12" fill="#22c55e" text-anchor="middle">TDD &amp; CI/CD</text>
+            font-weight="700" font-size="12" fill="#22c55e" text-anchor="middle">TDD &amp;   CI/CD</text>
     </g>
-    <!-- Badge LOCAL-FIRST AI -->
     <g transform="translate(540, 0)" filter="url(#glowSoft)">
       <rect x="0" y="0" width="180" height="34" rx="17" fill="#0f172a" stroke="#f97316" stroke-width="2" opacity="0.95"/>
       <text x="90" y="23" font-family="'JetBrains Mono', 'Fira Code', monospace"
             font-weight="700" font-size="12" fill="#f97316" text-anchor="middle">LOCAL-FIRST AI</text>
     </g>
-    <!-- Badge 9 PROJECTS -->
     <g transform="translate(730, 0)" filter="url(#glowSoft)">
-      <rect x="0" y="0" width="140" height="34" rx="17" fill="url(#goldGradient)" opacity="0.15" stroke="url(#goldGradient)" stroke-width="2"/>
-      <text x="70" y="23" font-family="'JetBrains Mono', 'Fira Code', monospace"
-            font-weight="700" font-size="12" fill="url(#goldGradient)" text-anchor="middle">9 PROJECTS</text>
+      <rect x="0" y="0" width="150" height="34" rx="17" fill="#0f172a" stroke="#ef4444" stroke-width="2" opacity="0.95"/>
+      <text x="75" y="23" font-family="'JetBrains Mono', 'Fira Code', monospace"
+            font-weight="700" font-size="12" fill="#ef4444" text-anchor="middle">BLUE TEAM</text>
+    </g>
+    <g transform="translate(890, 0)" filter="url(#glowSoft)">
+      <rect x="0" y="0" width="150" height="34" rx="17" fill="url(#goldGradient)" opacity="0.15" stroke="url(#goldGradient)" stroke-width="2"/>
+      <text x="75" y="23" font-family="'JetBrains Mono', 'Fira Code', monospace"
+            font-weight="700" font-size="12" fill="url(#goldGradient)" text-anchor="middle">18 PROJECTS</text>
     </g>
   </g>
 
-  <!-- Stats bar inferior -->
   <g transform="translate(100, 225)" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="13" font-weight="600">
     <g>
-      <text x="0" y="0" fill="#00f5ff">5</text>
-      <text x="16" y="0" fill="#64748b">  Enterprise APIs</text>
+      <text x="0" y="0" fill="#ef4444">5</text>
+      <text x="16" y="0" fill="#64748b">  Cybersecurity</text>
     </g>
     <g transform="translate(160, 0)">
-      <text x="0" y="0" fill="#a855f7">4</text>
-      <text x="16" y="0" fill="#64748b">  AI/Systems</text>
+      <text x="0" y="0" fill="#a855f7">6</text>
+      <text x="16" y="0" fill="#64748b">  Local-First AI</text>
     </g>
-    <g transform="translate(310, 0)">
-      <text x="0" y="0" fill="#22c55e">94%+</text>
-      <text x="42" y="0" fill="#64748b">  Test Coverage</text>
+    <g transform="translate(320, 0)">
+      <text x="0" y="0" fill="#22c55e">3</text>
+      <text x="16" y="0" fill="#64748b">  Data Ops &amp;   MCP</text>
     </g>
-    <g transform="translate(460, 0)">
-      <text x="0" y="0" fill="#f97316">100%</text>
-      <text x="38" y="0" fill="#64748b">  Local-First</text>
+    <g transform="translate(480, 0)">
+      <text x="0" y="0" fill="#f97316">5</text>
+      <text x="16" y="0" fill="#64748b">  Back-End APIs</text>
     </g>
-    <g transform="translate(600, 0)">
-      <text x="0" y="0" fill="#fbbf24">MIT</text>
-      <text x="28" y="0" fill="#64748b">  Licensed</text>
+    <g transform="translate(640, 0)">
+      <text x="0" y="0" fill="#fbbf24">18</text>
+      <text x="28" y="0" fill="#64748b">  Total Projects</text>
     </g>
   </g>
 
-  <!-- Barra decorativa inferior com gradiente animado -->
   <g transform="translate(0, 395)">
     <rect x="0" y="0" width="1440" height="25" fill="url(#bgGradient)" opacity="0.5"/>
     <rect x="0" y="0" width="1440" height="3" fill="url(#cyanGradient)" opacity="0.6">
@@ -586,7 +543,6 @@
     </rect>
   </g>
 
-  <!-- Barras verticais decorativas laterais com pulso -->
   <g opacity="0.35">
     <rect x="40" y="60" width="4" height="280" fill="url(#cyanGradient)" rx="2">
       <animate attributeName="height" values="280;200;280" dur="5s" repeatCount="indefinite"/>
@@ -596,7 +552,6 @@
     </rect>
   </g>
 
-  <!-- Linhas de scan sutis -->
   <g opacity="0.02" stroke="#00f5ff" stroke-width="1">
     <line x1="0" y1="100" x2="1440" y2="100">
       <animate attributeName="y1" values="100;420;100" dur="8s" repeatCount="indefinite"/>
@@ -606,5 +561,23 @@
       <animate attributeName="y1" values="250;420;250" dur="10s" repeatCount="indefinite"/>
       <animate attributeName="y2" values="250;420;250" dur="10s" repeatCount="indefinite"/>
     </line>
+  </g>
+
+  <g transform="translate(100, 300)" filter="url(#glowSoft)">
+    <rect x="0" y="0" width="220" height="28" rx="14" fill="#0f172a" stroke="#22c55e" stroke-width="2" opacity="0.95"/>
+    <text x="110" y="19" font-family="'JetBrains Mono', 'Fira Code', monospace"
+          font-weight="700" font-size="11" fill="#22c55e" text-anchor="middle">
+      <animate attributeName="opacity" values="1;0.4;1" dur="2s" repeatCount="indefinite"/>
+      ENTERPRISE READY
+    </text>
+  </g>
+
+  <g transform="translate(340, 300)" filter="url(#glowSoft)">
+    <rect x="0" y="0" width="180" height="28" rx="14" fill="#0f172a" stroke="#fbbf24" stroke-width="2" opacity="0.95"/>
+    <text x="90" y="19" font-family="'JetBrains Mono', 'Fira Code', monospace"
+          font-weight="700" font-size="11" fill="#fbbf24" text-anchor="middle">
+      <animate attributeName="opacity" values="1;0.4;1" dur="2.5s" repeatCount="indefinite"/>
+      OPEN TO WORK
+    </text>
   </g>
 </svg>
