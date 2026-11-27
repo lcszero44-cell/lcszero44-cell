@@ -168,14 +168,14 @@ Auditoria completa de **35 repositórios públicos** → categorização rigoros
 
 ### 🟢 Bloco 3 — Data Ops, BI & MCP
 
-**3 Projetos** • D3.js Visualization, Analytics Pipeline, Model Context Protocol, ML/Data Science
+**3 Projetos** • D3.js Visualization, Data Quality Pipelines, Model Context Protocol, AI Orchestration
 
 <div align="center">
 
 | # | Projeto | Descrição | Stack | Destaques Técnicos |
 |:---:|:---|:---|:---|:---|
 | **12** | **[PulseBI 3 Dashboard Universal](https://github.com/lcszero44-cell/pulsebi-3-dashboard-universal)** | Dashboard BI universal multi-fonte: visualizações interativas, métricas de negócio, drill-down dinâmico | `TypeScript` `React` `D3.js` `Vite` `Tailwind` `Recharts` `WebSocket` | **Multi-Source BI** • **Drill-Down Dinâmico** • **Real-time WebSocket** • **Responsive Charts** • **Dark/Light Theme** |
-| **13** | **[Credit Card Fraud Detection ML](https://github.com/lcszero44-cell/credit-card-fraud-detection-ml)** | Detecção de fraude cartão: ML desbalanceado, threshold tuning 0.50→0.30, GridSearchCV, SHAP XAI | `Python` `scikit-learn` `XGBoost` `SHAP` `imbalanced-learn` `GridSearchCV` | **Imbalanced ML** • **Threshold Tuning** • **SHAP Explainability** • **GridSearchCV** • **XAI** |
+| **13** | **[Python Data Integrity Lab](https://github.com/lcszero44-cell/python-data-integrity-lab)** | Laboratório de integridade de dados: validação de schemas, detecção de anomalias, pipelines de qualidade de dados automatizados | `Python` `pandas` `Great Expectations` `Pydantic` `pytest` `Data Contracts` | **Schema Validation** • **Anomaly Detection** • **Data Quality Pipelines** • **Contract Testing** • **Automated Profiling** |
 | **14** | **[AIOX Core](https://github.com/lcszero44-cell/aiox-core)** | Synkra AIOS: AI-Orchestrated System for Full Stack Development - Core Framework v4.0 | `TypeScript` `Node.js` `Python` `AI Orchestration` `MCP` `Plugin System` | **AI-Orchestrated System** • **Plugin Architecture** • **MCP Integration** • **Full-Stack AI** • **Framework v4.0** |
 
 </div>
@@ -189,9 +189,9 @@ Auditoria completa de **35 repositórios públicos** → categorização rigoros
 [![PulseBI Pin](https://github-readme-stats.vercel.app/api/pin/?username=lcszero44-cell&repo=pulsebi-3-dashboard-universal&theme=tokyonight&hide_border=true&bg_color=030712&title_color=22c55e&icon_color=22c55e&text_color=e2e8f0&border_radius=8)](https://github.com/lcszero44-cell/pulsebi-3-dashboard-universal)
 [![PulseBI Stars](https://img.shields.io/github/stars/lcszero44-cell/pulsebi-3-dashboard-universal?style=for-the-badge&color=22c55e&logo=github)](https://github.com/lcszero44-cell/pulsebi-3-dashboard-universal)
 
-**[Credit Card Fraud Detection ML]**
-[![Fraud ML Pin](https://github-readme-stats.vercel.app/api/pin/?username=lcszero44-cell&repo=credit-card-fraud-detection-ml&theme=tokyonight&hide_border=true&bg_color=030712&title_color=22c55e&icon_color=22c55e&text_color=e2e8f0&border_radius=8)](https://github.com/lcszero44-cell/credit-card-fraud-detection-ml)
-[![Fraud ML Stars](https://img.shields.io/github/stars/lcszero44-cell/credit-card-fraud-detection-ml?style=for-the-badge&color=4ade80&logo=github)](https://github.com/lcszero44-cell/credit-card-fraud-detection-ml)
+**[Python Data Integrity Lab]**
+[![Data Integrity Pin](https://github-readme-stats.vercel.app/api/pin/?username=lcszero44-cell&repo=python-data-integrity-lab&theme=tokyonight&hide_border=true&bg_color=030712&title_color=22c55e&icon_color=22c55e&text_color=e2e8f0&border_radius=8)](https://github.com/lcszero44-cell/python-data-integrity-lab)
+[![Data Integrity Stars](https://img.shields.io/github/stars/lcszero44-cell/python-data-integrity-lab?style=for-the-badge&color=4ade80&logo=github)](https://github.com/lcszero44-cell/python-data-integrity-lab)
 
 **[AIOX Core]**
 [![AIOX Pin](https://github-readme-stats.vercel.app/api/pin/?username=lcszero44-cell&repo=aiox-core&theme=tokyonight&hide_border=true&bg_color=030712&title_color=22c55e&icon_color=22c55e&text_color=e2e8f0&border_radius=8)](https://github.com/lcszero44-cell/aiox-core)
@@ -291,12 +291,12 @@ flowchart TB
     subgraph DATA["🟢 DATA OPS, BI & MCP"]
         D3["D3.js / Recharts<br/>Data Visualization"]
         BI["PulseBI Universal<br/>Multi-Source Dashboard"]
-        FRAUD["Fraud Detection<br/>ML Pipeline + SHAP"]
+        INTEGRITY["Data Integrity Lab<br/>Quality Pipelines"]
         AIOS["AIOX Core<br/>AI-Orchestrated System"]
         MCP_DATA["MCP Finance<br/>Pluggy + Plaid"]
         
         D3 --> BI
-        FRAUD --> AIOS
+        INTEGRITY --> AIOS
         AIOS --> MCP_DATA
     end
     
@@ -328,7 +328,7 @@ flowchart TB
     
     class SIEM,MITRE,COMPLIANCE,HARDENING,FRAUD_ML sec
     class OLLAMA,LLAMA,WIN32,N8N,BAILEYS,OPENCV,FFMPEG,MCP_AI,PROXY ai
-    class D3,BI,FRAUD,AIOS,MCP_DATA data
+    class D3,BI,INTEGRITY,AIOS,MCP_DATA data
     class FASTAPI,MONGO,POSTGRES,TDD,REDIS,DECIMAL,CLEAN back
 ```
 
