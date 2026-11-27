@@ -8,10 +8,10 @@
       <stop offset="100%" style="stop-color:#020617"/>
     </linearGradient>
 
-    <linearGradient id="cyanGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:#00f5ff"/>
-      <stop offset="50%" style="stop-color:#06b6d4"/>
-      <stop offset="100%" style="stop-color:#0891b2"/>
+    <linearGradient id="redGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#ef4444"/>
+      <stop offset="50%" style="stop-color:#dc2626"/>
+      <stop offset="100%" style="stop-color:#b91c1c"/>
     </linearGradient>
 
     <linearGradient id="purpleGradient" x1="0%" y1="0%" x2="100%" y2="0%">
@@ -32,16 +32,16 @@
       <stop offset="100%" style="stop-color:#c2410c"/>
     </linearGradient>
 
-    <linearGradient id="redGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:#ef4444"/>
-      <stop offset="50%" style="stop-color:#dc2626"/>
-      <stop offset="100%" style="stop-color:#b91c1c"/>
-    </linearGradient>
-
     <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" style="stop-color:#fbbf24"/>
       <stop offset="50%" style="stop-color:#f59e0b"/>
       <stop offset="100%" style="stop-color:#d97706"/>
+    </linearGradient>
+
+    <linearGradient id="cyanGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#00f5ff"/>
+      <stop offset="50%" style="stop-color:#06b6d4"/>
+      <stop offset="100%" style="stop-color:#0891b2"/>
     </linearGradient>
 
     <linearGradient id="textGradient" x1="0%" y1="0%" x2="100%" y2="0%">
@@ -57,33 +57,33 @@
     </linearGradient>
 
     <linearGradient id="coreGradient1" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#0f172a" stop-opacity="0.9"/>
-      <stop offset="50%" style="stop-color:#0a1628" stop-opacity="0.95"/>
-      <stop offset="100%" style="stop-color:#051022" stop-opacity="1"/>
+      <stop offset="0%" style="stop-color:#1a0d0d" stop-opacity="0.95"/>
+      <stop offset="50%" style="stop-color:#0f0808" stop-opacity="0.98"/>
+      <stop offset="100%" style="stop-color:#050303" stop-opacity="1"/>
     </linearGradient>
 
     <linearGradient id="coreGradient2" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#1e1b4b" stop-opacity="0.9"/>
-      <stop offset="50%" style="stop-color:#1a163a" stop-opacity="0.95"/>
-      <stop offset="100%" style="stop-color:#14122a" stop-opacity="1"/>
+      <stop offset="0%" style="stop-color:#1e103a" stop-opacity="0.95"/>
+      <stop offset="50%" style="stop-color:#140826" stop-opacity="0.98"/>
+      <stop offset="100%" style="stop-color:#0a0415" stop-opacity="1"/>
     </linearGradient>
 
     <linearGradient id="coreGradient3" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#14532d" stop-opacity="0.9"/>
-      <stop offset="50%" style="stop-color:#0f3d1e" stop-opacity="0.95"/>
-      <stop offset="100%" style="stop-color:#0a2a15" stop-opacity="1"/>
+      <stop offset="0%" style="stop-color:#0a2a10" stop-opacity="0.95"/>
+      <stop offset="50%" style="stop-color:#061a08" stop-opacity="0.98"/>
+      <stop offset="100%" style="stop-color:#030d04" stop-opacity="1"/>
     </linearGradient>
 
     <linearGradient id="coreGradient4" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#7c2d12" stop-opacity="0.9"/>
-      <stop offset="50%" style="stop-color:#5c1f0f" stop-opacity="0.95"/>
-      <stop offset="100%" style="stop-color:#431407" stop-opacity="1"/>
+      <stop offset="0%" style="stop-color:#2a1505" stop-opacity="0.95"/>
+      <stop offset="50%" style="stop-color:#1a0d03" stop-opacity="0.98"/>
+      <stop offset="100%" style="stop-color:#0d0602" stop-opacity="1"/>
     </linearGradient>
 
     <linearGradient id="dataFlow1" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:#00f5ff" stop-opacity="0"/>
-      <stop offset="50%" style="stop-color:#00f5ff" stop-opacity="1"/>
-      <stop offset="100%" style="stop-color:#00f5ff" stop-opacity="0"/>
+      <stop offset="0%" style="stop-color:#ef4444" stop-opacity="0"/>
+      <stop offset="50%" style="stop-color:#ef4444" stop-opacity="1"/>
+      <stop offset="100%" style="stop-color:#ef4444" stop-opacity="0"/>
     </linearGradient>
 
     <linearGradient id="dataFlow2" x1="0%" y1="0%" x2="100%" y2="0%">
@@ -120,9 +120,9 @@
       </feMerge>
     </filter>
 
-    <filter id="neonGlow" x="-40%" y="-40%" width="180%" height="180%">
+    <filter id="redGlow" x="-40%" y="-40%" width="180%" height="180%">
       <feGaussianBlur stdDeviation="8" result="blur"/>
-      <feFlood flood-color="#00f5ff" flood-opacity="0.8" result="glowColor"/>
+      <feFlood flood-color="#ef4444" flood-opacity="0.8" result="glowColor"/>
       <feComposite in="glowColor" in2="blur" operator="in" result="glow"/>
       <feMerge>
         <feMergeNode in="glow"/>
@@ -140,9 +140,19 @@
       </feMerge>
     </filter>
 
-    <filter id="redGlow" x="-40%" y="-40%" width="180%" height="180%">
+    <filter id="greenGlow" x="-40%" y="-40%" width="180%" height="180%">
       <feGaussianBlur stdDeviation="8" result="blur"/>
-      <feFlood flood-color="#ef4444" flood-opacity="0.8" result="glowColor"/>
+      <feFlood flood-color="#22c55e" flood-opacity="0.8" result="glowColor"/>
+      <feComposite in="glowColor" in2="blur" operator="in" result="glow"/>
+      <feMerge>
+        <feMergeNode in="glow"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="orangeGlow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feFlood flood-color="#f97316" flood-opacity="0.8" result="glowColor"/>
       <feComposite in="glowColor" in2="blur" operator="in" result="glow"/>
       <feMerge>
         <feMergeNode in="glow"/>
@@ -175,38 +185,33 @@
     </filter>
 
     <pattern id="isoGrid" width="60" height="60" patternUnits="userSpaceOnUse">
-      <path d="M30,0 L60,21 L60,63 L30,84 L0,63 L0,21 Z" fill="none" stroke="#00f5ff" stroke-width="0.4" opacity="0.08">
-        <animate attributeName="opacity" values="0.08;0.15;0.08" dur="4s" repeatCount="indefinite"/>
+      <path d="M30,0 L60,21 L60,63 L30,84 L0,63 L0,21 Z" fill="none" stroke="#00f5ff" stroke-width="0.4" opacity="0.06">
+        <animate attributeName="opacity" values="0.06;0.12;0.06" dur="4s" repeatCount="indefinite"/>
       </path>
     </pattern>
 
     <pattern id="circuitPattern" width="100" height="100" patternUnits="userSpaceOnUse">
-      <rect x="0" y="50" width="100" height="1" fill="url(#cyanGradient)" opacity="0.04"/>
-      <rect x="50" y="0" width="1" height="100" fill="url(#purpleGradient)" opacity="0.04"/>
-      <circle cx="50" cy="50" r="12" fill="none" stroke="url(#cyanGradient)" stroke-width="0.6" opacity="0.06"/>
-      <rect x="45" y="45" width="10" height="10" fill="none" stroke="url(#purpleGradient)" stroke-width="0.4" opacity="0.05"/>
-    </pattern>
-
-    <pattern id="hexPattern" width="70" height="70" patternUnits="userSpaceOnUse">
-      <path d="M35,0 L63,20.2 L63,70 L35,90.2 L7,70 L7,20.2 Z" fill="none" stroke="#a855f7" stroke-width="0.3" opacity="0.05"/>
+      <rect x="0" y="50" width="100" height="1" fill="url(#cyanGradient)" opacity="0.03"/>
+      <rect x="50" y="0" width="1" height="100" fill="url(#purpleGradient)" opacity="0.03"/>
+      <circle cx="50" cy="50" r="12" fill="none" stroke="url(#cyanGradient)" stroke-width="0.5" opacity="0.05"/>
     </pattern>
 
     <filter id="noise" x="0%" y="0%" width="100%" height="100%">
       <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="4" stitchTiles="stitch" result="noise"/>
-      <feColorMatrix type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.02 0" in="noise" result="noiseAlpha"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.015 0" in="noise" result="noiseAlpha"/>
     </filter>
 
-    <marker id="flowArrow1" markerWidth="12" markerHeight="8" refX="11" refY="4" orient="auto">
-      <polygon points="0 0, 12 4, 0 8" fill="url(#dataFlow1)"/>
+    <marker id="flowArrow1" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="url(#dataFlow1)"/>
     </marker>
-    <marker id="flowArrow2" markerWidth="12" markerHeight="8" refX="11" refY="4" orient="auto">
-      <polygon points="0 0, 12 4, 0 8" fill="url(#dataFlow2)"/>
+    <marker id="flowArrow2" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="url(#dataFlow2)"/>
     </marker>
-    <marker id="flowArrow3" markerWidth="12" markerHeight="8" refX="11" refY="4" orient="auto">
-      <polygon points="0 0, 12 4, 0 8" fill="url(#dataFlow3)"/>
+    <marker id="flowArrow3" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="url(#dataFlow3)"/>
     </marker>
-    <marker id="flowArrow4" markerWidth="12" markerHeight="8" refX="11" refY="4" orient="auto">
-      <polygon points="0 0, 12 4, 0 8" fill="url(#dataFlow4)"/>
+    <marker id="flowArrow4" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="url(#dataFlow4)"/>
     </marker>
 
     <clipPath id="textClip">
@@ -215,97 +220,77 @@
   </defs>
 
   <rect width="1440" height="420" fill="url(#bgGradient)"/>
-  <rect width="1440" height="420" filter="url(#noise)" opacity="0.015"/>
+  <rect width="1440" height="420" filter="url(#noise)" opacity="0.02"/>
 
-  <g opacity="0.4">
+  <g opacity="0.35">
     <rect width="1440" height="420" fill="url(#isoGrid)"/>
     <rect width="1440" height="420" fill="url(#circuitPattern)"/>
-    <rect width="1440" height="420" fill="url(#hexPattern)"/>
   </g>
 
-  <g opacity="0.6" filter="url(#glowSoft)">
-    <circle cx="120" cy="60" r="3" fill="#00f5ff">
-      <animate attributeName="cy" values="60;35;60" dur="3.5s" repeatCount="indefinite"/>
+  <g opacity="0.5" filter="url(#glowSoft)">
+    <circle cx="120" cy="50" r="3" fill="#ef4444">
+      <animate attributeName="cy" values="50;25;50" dur="3.5s" repeatCount="indefinite"/>
       <animate attributeName="opacity" values="0.3;1;0.3" dur="3.5s" repeatCount="indefinite"/>
       <animate attributeName="r" values="3;5;3" dur="3.5s" repeatCount="indefinite"/>
     </circle>
-    <circle cx="280" cy="80" r="2" fill="#a855f7">
-      <animate attributeName="cy" values="80;55;80" dur="4s" repeatCount="indefinite"/>
+    <circle cx="300" cy="70" r="2" fill="#a855f7">
+      <animate attributeName="cy" values="70;45;70" dur="4s" repeatCount="indefinite"/>
       <animate attributeName="opacity" values="0.2;0.9;0.2" dur="4s" repeatCount="indefinite"/>
     </circle>
-    <circle cx="480" cy="40" r="2.5" fill="#22c55e">
-      <animate attributeName="cy" values="40;15;40" dur="3s" repeatCount="indefinite"/>
+    <circle cx="550" cy="35" r="2.5" fill="#22c55e">
+      <animate attributeName="cy" values="35;10;35" dur="3s" repeatCount="indefinite"/>
       <animate attributeName="opacity" values="0.3;1;0.3" dur="3s" repeatCount="indefinite"/>
     </circle>
-    <circle cx="720" cy="70" r="2" fill="#f97316">
-      <animate attributeName="cy" values="70;45;70" dur="4.5s" repeatCount="indefinite"/>
+    <circle cx="850" cy="60" r="2" fill="#f97316">
+      <animate attributeName="cy" values="60;35;60" dur="4.5s" repeatCount="indefinite"/>
       <animate attributeName="opacity" values="0.2;0.8;0.2" dur="4.5s" repeatCount="indefinite"/>
     </circle>
-    <circle cx="960" cy="50" r="3" fill="#00f5ff">
-      <animate attributeName="cy" values="50;25;50" dur="3.2s" repeatCount="indefinite"/>
+    <circle cx="1100" cy="45" r="3" fill="#ef4444">
+      <animate attributeName="cy" values="45;20;45" dur="3.2s" repeatCount="indefinite"/>
       <animate attributeName="opacity" values="0.3;0.9;0.3" dur="3.2s" repeatCount="indefinite"/>
     </circle>
-    <circle cx="1180" cy="90" r="2" fill="#ef4444">
-      <animate attributeName="cy" values="90;65;90" dur="4.2s" repeatCount="indefinite"/>
-      <animate attributeName="opacity" values="0.2;0.8;0.2" dur="4.2s" repeatCount="indefinite"/>
-    </circle>
-    <circle cx="1350" cy="60" r="2.5" fill="#a855f7">
-      <animate attributeName="cy" values="60;35;60" dur="3.8s" repeatCount="indefinite"/>
+    <circle cx="1320" cy="75" r="2" fill="#a855f7">
+      <animate attributeName="cy" values="75;50;75" dur="3.8s" repeatCount="indefinite"/>
       <animate attributeName="opacity" values="0.3;1;0.3" dur="3.8s" repeatCount="indefinite"/>
     </circle>
-    <circle cx="100" cy="360" r="2" fill="#22c55e">
-      <animate attributeName="cy" values="360;335;360" dur="4s" repeatCount="indefinite"/>
+    <circle cx="80" cy="370" r="2" fill="#22c55e">
+      <animate attributeName="cy" values="370;345;370" dur="4s" repeatCount="indefinite"/>
       <animate attributeName="opacity" values="0.2;0.9;0.2" dur="4s" repeatCount="indefinite"/>
     </circle>
-    <circle cx="350" cy="380" r="2.5" fill="#f97316">
-      <animate attributeName="cy" values="380;355;380" dur="3.5s" repeatCount="indefinite"/>
+    <circle cx="400" cy="385" r="2.5" fill="#f97316">
+      <animate attributeName="cy" values="385;360;385" dur="3.5s" repeatCount="indefinite"/>
       <animate attributeName="opacity" values="0.3;0.8;0.3" dur="3.5s" repeatCount="indefinite"/>
     </circle>
-    <circle cx="1100" cy="350" r="2" fill="#00f5ff">
-      <animate attributeName="cy" values="350;325;350" dur="3.7s" repeatCount="indefinite"/>
+    <circle cx="1150" cy="360" r="2" fill="#ef4444">
+      <animate attributeName="cy" values="360;335;360" dur="3.7s" repeatCount="indefinite"/>
       <animate attributeName="opacity" values="0.2;0.9;0.2" dur="3.7s" repeatCount="indefinite"/>
     </circle>
-    <circle cx="1320" cy="370" r="2.5" fill="#a855f7">
-      <animate attributeName="cy" values="370;345;370" dur="4.3s" repeatCount="indefinite"/>
+    <circle cx="1350" cy="380" r="2.5" fill="#a855f7">
+      <animate attributeName="cy" values="380;355;380" dur="4.3s" repeatCount="indefinite"/>
       <animate attributeName="opacity" values="0.3;0.8;0.3" dur="4.3s" repeatCount="indefinite"/>
     </circle>
   </g>
 
-  <g filter="url(#glowSoft)" stroke-width="2" opacity="0.4" stroke-dasharray="15,10">
-    <path d="M320,190 Q280,150 220,130" fill="none" stroke="url(#dataFlow1)" marker-end="url(#flowArrow1)">
-      <animate attributeName="stroke-dashoffset" values="0;50" dur="2s" repeatCount="indefinite"/>
+  <g filter="url(#glowSoft)" stroke-width="2" opacity="0.35" stroke-dasharray="12,8">
+    <path d="M300,110 Q370,90 440,110" fill="none" stroke="url(#dataFlow1)" marker-end="url(#flowArrow1)">
+      <animate attributeName="stroke-dashoffset" values="0;40" dur="2.5s" repeatCount="indefinite"/>
     </path>
-    <path d="M320,210 Q280,170 220,170" fill="none" stroke="url(#dataFlow1)" marker-end="url(#flowArrow1)" opacity="0.3">
-      <animate attributeName="stroke-dashoffset" values="25;75" dur="2s" repeatCount="indefinite"/>
+    <path d="M640,110 Q710,90 780,110" fill="none" stroke="url(#dataFlow2)" marker-end="url(#flowArrow2)">
+      <animate attributeName="stroke-dashoffset" values="15;55" dur="2.5s" repeatCount="indefinite"/>
     </path>
-
-    <path d="M560,190 Q530,140 470,130" fill="none" stroke="url(#dataFlow2)" marker-end="url(#flowArrow2)">
-      <animate attributeName="stroke-dashoffset" values="10;60" dur="2s" repeatCount="indefinite"/>
+    <path d="M980,110 Q1050,90 1120,110" fill="none" stroke="url(#dataFlow3)" marker-end="url(#flowArrow3)">
+      <animate attributeName="stroke-dashoffset" values="30;70" dur="2.5s" repeatCount="indefinite"/>
     </path>
-    <path d="M560,210 Q530,180 470,170" fill="none" stroke="url(#dataFlow2)" marker-end="url(#flowArrow2)" opacity="0.3">
-      <animate attributeName="stroke-dashoffset" values="35;85" dur="2s" repeatCount="indefinite"/>
-    </path>
-
-    <path d="M880,190 Q920,140 990,130" fill="none" stroke="url(#dataFlow3)" marker-end="url(#flowArrow3)">
-      <animate attributeName="stroke-dashoffset" values="20;70" dur="2s" repeatCount="indefinite"/>
-    </path>
-    <path d="M880,210 Q920,180 990,170" fill="none" stroke="url(#dataFlow3)" marker-end="url(#flowArrow3)" opacity="0.3">
-      <animate attributeName="stroke-dashoffset" values="45;95" dur="2s" repeatCount="indefinite"/>
-    </path>
-
-    <path d="M1120,190 Q1160,150 1230,130" fill="none" stroke="url(#dataFlow4)" marker-end="url(#flowArrow4)">
-      <animate attributeName="stroke-dashoffset" values="5;55" dur="2s" repeatCount="indefinite"/>
-    </path>
-    <path d="M1120,210 Q1160,190 1230,170" fill="none" stroke="url(#dataFlow4)" marker-end="url(#flowArrow4)" opacity="0.3">
-      <animate attributeName="stroke-dashoffset" values="30;80" dur="2s" repeatCount="indefinite"/>
+    <path d="M1300,110 Q1200,70 1100,110" fill="none" stroke="url(#dataFlow4)" marker-end="url(#flowArrow4)" opacity="0.2">
+      <animate attributeName="stroke-dashoffset" values="5;45" dur="2.5s" repeatCount="indefinite"/>
     </path>
   </g>
 
-  <g transform="translate(720, 200)" filter="url(#dropShadow3D)">
+  <g transform="translate(720, 110)" filter="url(#dropShadow3D)">
     <polygon points="0,-50 45,-30 75,0 45,30 0,50 -45,30 -75,0 -45,-30" fill="url(#hubGradient)" stroke="url(#cyanGradient)" stroke-width="3" opacity="0.95" filter="url(#glowStrong)">
       <animate attributeName="stroke-width" values="3;4;3" dur="3s" repeatCount="indefinite"/>
     </polygon>
-    <polygon points="0,-40 35,-22 60,0 35,22 0,40 -35,22 -60,0 -35,-22" fill="none" stroke="url(#purpleGradient)" stroke-width="1.5" opacity="0.7" stroke-dasharray="8,6">
+    <polygon points="0,-40 35,-22 60,0 35,22 0,40 -35,22 -60,0 -35,-22" fill="none" stroke="url(#purpleGradient)" stroke-width="1.5" opacity="0.6" stroke-dasharray="8,6">
       <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="20s" repeatCount="indefinite"/>
     </polygon>
     <circle cx="0" cy="0" r="28" fill="url(#hubGradient)" stroke="url(#cyanGradient)" stroke-width="2" opacity="0.9">
@@ -313,13 +298,13 @@
       <animate attributeName="stroke-width" values="2;3;2" dur="2s" repeatCount="indefinite"/>
     </circle>
     <g filter="url(#glowSoft)">
-      <ellipse cx="0" cy="0" rx="50" ry="20" fill="none" stroke="url(#cyanGradient)" stroke-width="1.5" opacity="0.5" stroke-dasharray="10,8">
+      <ellipse cx="0" cy="0" rx="50" ry="20" fill="none" stroke="url(#cyanGradient)" stroke-width="1.5" opacity="0.4" stroke-dasharray="10,8">
         <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="12s" repeatCount="indefinite"/>
       </ellipse>
-      <ellipse cx="0" cy="0" rx="35" ry="45" fill="none" stroke="url(#purpleGradient)" stroke-width="1" opacity="0.4" stroke-dasharray="6,6">
+      <ellipse cx="0" cy="0" rx="35" ry="45" fill="none" stroke="url(#purpleGradient)" stroke-width="1" opacity="0.3" stroke-dasharray="6,6">
         <animateTransform attributeName="transform" type="rotate" from="360" to="0" dur="15s" repeatCount="indefinite"/>
       </ellipse>
-      <ellipse cx="0" cy="0" rx="65" ry="25" fill="none" stroke="url(#greenGradient)" stroke-width="1" opacity="0.3" stroke-dasharray="12,10">
+      <ellipse cx="0" cy="0" rx="65" ry="25" fill="none" stroke="url(#greenGradient)" stroke-width="1" opacity="0.25" stroke-dasharray="12,10">
         <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="18s" repeatCount="indefinite"/>
       </ellipse>
     </g>
@@ -343,7 +328,7 @@
     </g>
   </g>
 
-  <g transform="translate(140, 110)" filter="url(#dropShadow3D)">
+  <g transform="translate(140, 10)" filter="url(#dropShadow3D)">
     <polygon points="0,35 40,0 80,35 40,70" fill="url(#coreGradient1)" stroke="url(#redGradient)" stroke-width="2.5" opacity="0.95"/>
     <polygon points="40,0 80,35 40,70 0,35" fill="url(#coreGradient1)" stroke="url(#redGradient)" stroke-width="2" opacity="0.8"/>
     <polygon points="0,35 40,70 0,105 -40,70" fill="url(#coreGradient1)" stroke="url(#redGradient)" stroke-width="2" opacity="0.7"/>
@@ -361,10 +346,10 @@
         </circle>
       </g>
     </g>
-    <text x="40" y="130" font-family="'JetBrains Mono', monospace" font-weight="600" font-size="11" fill="#f87171" text-anchor="middle">Cybersecurity &amp;   DevSecOps</text>
+    <text x="40" y="130" font-family="'JetBrains Mono', monospace" font-weight="600" font-size="11" fill="#f87171" text-anchor="middle">Cybersecurity &amp; DevSecOps</text>
   </g>
 
-  <g transform="translate(400, 110)" filter="url(#dropShadow3D)">
+  <g transform="translate(480, 10)" filter="url(#dropShadow3D)">
     <polygon points="0,35 40,0 80,35 40,70" fill="url(#coreGradient2)" stroke="url(#purpleGradient)" stroke-width="2.5" opacity="0.95"/>
     <polygon points="40,0 80,35 40,70 0,35" fill="url(#coreGradient2)" stroke="url(#purpleGradient)" stroke-width="2" opacity="0.8"/>
     <polygon points="0,35 40,70 0,105 -40,70" fill="url(#coreGradient2)" stroke="url(#purpleGradient)" stroke-width="2" opacity="0.7"/>
@@ -393,10 +378,10 @@
         </g>
       </g>
     </g>
-    <text x="40" y="130" font-family="'JetBrains Mono', monospace" font-weight="600" font-size="11" fill="#c084fc" text-anchor="middle">Local-First AI &amp;   Win32</text>
+    <text x="40" y="130" font-family="'JetBrains Mono', monospace" font-weight="600" font-size="11" fill="#c084fc" text-anchor="middle">Local-First AI &amp; Win32</text>
   </g>
 
-  <g transform="translate(1000, 110)" filter="url(#dropShadow3D)">
+  <g transform="translate(820, 10)" filter="url(#dropShadow3D)">
     <polygon points="0,35 40,0 80,35 40,70" fill="url(#coreGradient3)" stroke="url(#greenGradient)" stroke-width="2.5" opacity="0.95"/>
     <polygon points="40,0 80,35 40,70 0,35" fill="url(#coreGradient3)" stroke="url(#greenGradient)" stroke-width="2" opacity="0.8"/>
     <polygon points="0,35 40,70 0,105 -40,70" fill="url(#coreGradient3)" stroke="url(#greenGradient)" stroke-width="2" opacity="0.7"/>
@@ -419,10 +404,10 @@
         </circle>
       </g>
     </g>
-    <text x="40" y="130" font-family="'JetBrains Mono', monospace" font-weight="600" font-size="11" fill="#4ade80" text-anchor="middle">Data Ops, BI &amp;   MCP</text>
+    <text x="40" y="130" font-family="'JetBrains Mono', monospace" font-weight="600" font-size="11" fill="#4ade80" text-anchor="middle">Data Ops, BI &amp; MCP</text>
   </g>
 
-  <g transform="translate(1260, 110)" filter="url(#dropShadow3D)">
+  <g transform="translate(1140, 10)" filter="url(#dropShadow3D)">
     <polygon points="0,35 40,0 80,35 40,70" fill="url(#coreGradient4)" stroke="url(#orangeGradient)" stroke-width="2.5" opacity="0.95"/>
     <polygon points="40,0 80,35 40,70 0,35" fill="url(#coreGradient4)" stroke="url(#orangeGradient)" stroke-width="2" opacity="0.8"/>
     <polygon points="0,35 40,70 0,105 -40,70" fill="url(#coreGradient4)" stroke="url(#orangeGradient)" stroke-width="2" opacity="0.7"/>
@@ -442,142 +427,124 @@
         </circle>
       </g>
     </g>
-    <text x="40" y="130" font-family="'JetBrains Mono', monospace" font-weight="600" font-size="11" fill="#fb923c" text-anchor="middle">Back-End Enterprise &amp;   TDD</text>
+    <text x="40" y="130" font-family="'JetBrains Mono', monospace" font-weight="600" font-size="11" fill="#fb923c" text-anchor="middle">Back-End Enterprise &amp; TDD</text>
   </g>
 
-  <g transform="translate(100, 75)" filter="url(#textNeon)">
+  <g transform="translate(40, 50)" filter="url(#textNeon)">
     <text x="0" y="0" font-family="'Segoe UI', 'SF Pro Display', 'Roboto', sans-serif"
-          font-weight="900" font-size="48" letter-spacing="-0.5" fill="url(#textGradient)"
+          font-weight="900" font-size="44" letter-spacing="-0.5" fill="url(#textGradient)"
           clip-path="url(#textClip)">
       LUCAS HENRIQUE
     </text>
   </g>
 
-  <g transform="translate(580, 75)" filter="url(#glowSoft)">
+  <g transform="translate(540, 50)" filter="url(#glowSoft)">
     <text x="0" y="0" font-family="'JetBrains Mono', 'Fira Code', monospace"
-          font-weight="700" font-size="48" letter-spacing="2" fill="url(#purpleGradient)"
+          font-weight="700" font-size="44" letter-spacing="2" fill="url(#purpleGradient)"
           clip-path="url(#textClip)">
       //
     </text>
   </g>
 
-  <g transform="translate(680, 75)" filter="url(#textNeon)">
+  <g transform="translate(620, 50)" filter="url(#textNeon)">
     <text x="0" y="0" font-family="'Segoe UI', 'SF Pro Display', 'Roboto', sans-serif"
-          font-weight="700" font-size="26" letter-spacing="1" fill="url(#cyanGradient)"
+          font-weight="700" font-size="24" letter-spacing="1" fill="url(#cyanGradient)"
           clip-path="url(#textClip)">
-      FULL-STACK ARCHITECT &amp;   CYBERSECURITY SPECIALIST
+      FULL-STACK ARCHITECT &amp; CYBERSECURITY SPECIALIST
     </text>
   </g>
 
-  <g transform="translate(100, 125)" opacity="0.85">
+  <g transform="translate(40, 95)" opacity="0.85">
     <text x="0" y="0" font-family="'Segoe UI', 'SF Pro Display', 'Roboto', sans-serif"
-          font-weight="400" font-size="15" letter-spacing="0.5" fill="#94a3b8"
+          font-weight="400" font-size="14" letter-spacing="0.5" fill="#94a3b8"
           clip-path="url(#textClip)">
       Local-First Architecture &amp;bull; High-Concurrency Async APIs &amp;bull; Blue Team / DevSecOps &amp;bull; AI-Powered Automation
     </text>
   </g>
 
-  <g transform="translate(100, 160)">
+  <g transform="translate(180, 310)">
     <g filter="url(#glowSoft)">
-      <rect x="0" y="0" width="150" height="34" rx="17" fill="#0f172a" stroke="#00f5ff" stroke-width="2" opacity="0.95"/>
-      <text x="75" y="23" font-family="'JetBrains Mono', 'Fira Code', monospace"
-            font-weight="700" font-size="12" fill="#00f5ff" text-anchor="middle">ZERO-CONFIG</text>
-    </g>
-    <g transform="translate(160, 0)" filter="url(#glowSoft)">
-      <rect x="0" y="0" width="190" height="34" rx="17" fill="#0f172a" stroke="#a855f7" stroke-width="2" opacity="0.95"/>
-      <text x="95" y="23" font-family="'JetBrains Mono', 'Fira Code', monospace"
-            font-weight="700" font-size="12" fill="#a855f7" text-anchor="middle">HIGH CONCURRENCY</text>
-    </g>
-    <g transform="translate(360, 0)" filter="url(#glowSoft)">
-      <rect x="0" y="0" width="170" height="34" rx="17" fill="#0f172a" stroke="#22c55e" stroke-width="2" opacity="0.95"/>
-      <text x="85" y="23" font-family="'JetBrains Mono', 'Fira Code', monospace"
-            font-weight="700" font-size="12" fill="#22c55e" text-anchor="middle">TDD &amp;   CI/CD</text>
-    </g>
-    <g transform="translate(540, 0)" filter="url(#glowSoft)">
-      <rect x="0" y="0" width="180" height="34" rx="17" fill="#0f172a" stroke="#f97316" stroke-width="2" opacity="0.95"/>
-      <text x="90" y="23" font-family="'JetBrains Mono', 'Fira Code', monospace"
-            font-weight="700" font-size="12" fill="#f97316" text-anchor="middle">LOCAL-FIRST AI</text>
-    </g>
-    <g transform="translate(730, 0)" filter="url(#glowSoft)">
       <rect x="0" y="0" width="150" height="34" rx="17" fill="#0f172a" stroke="#ef4444" stroke-width="2" opacity="0.95"/>
       <text x="75" y="23" font-family="'JetBrains Mono', 'Fira Code', monospace"
-            font-weight="700" font-size="12" fill="#ef4444" text-anchor="middle">BLUE TEAM</text>
+            font-weight="700" font-size="11" fill="#ef4444" text-anchor="middle">ZERO-CONFIG</text>
     </g>
-    <g transform="translate(890, 0)" filter="url(#glowSoft)">
+    <g transform="translate(165, 0)" filter="url(#glowSoft)">
+      <rect x="0" y="0" width="190" height="34" rx="17" fill="#0f172a" stroke="#a855f7" stroke-width="2" opacity="0.95"/>
+      <text x="95" y="23" font-family="'JetBrains Mono', 'Fira Code', monospace"
+            font-weight="700" font-size="11" fill="#a855f7" text-anchor="middle">HIGH CONCURRENCY</text>
+    </g>
+    <g transform="translate(370, 0)" filter="url(#glowSoft)">
+      <rect x="0" y="0" width="160" height="34" rx="17" fill="#0f172a" stroke="#22c55e" stroke-width="2" opacity="0.95"/>
+      <text x="80" y="23" font-family="'JetBrains Mono', 'Fira Code', monospace"
+            font-weight="700" font-size="11" fill="#22c55e" text-anchor="middle">TDD &amp; CI/CD</text>
+    </g>
+    <g transform="translate(545, 0)" filter="url(#glowSoft)">
+      <rect x="0" y="0" width="180" height="34" rx="17" fill="#0f172a" stroke="#00f5ff" stroke-width="2" opacity="0.95"/>
+      <text x="90" y="23" font-family="'JetBrains Mono', 'Fira Code', monospace"
+            font-weight="700" font-size="11" fill="#00f5ff" text-anchor="middle">LOCAL-FIRST AI</text>
+    </g>
+    <g transform="translate(740, 0)" filter="url(#glowSoft)">
+      <rect x="0" y="0" width="160" height="34" rx="17" fill="#0f172a" stroke="#f97316" stroke-width="2" opacity="0.95"/>
+      <text x="80" y="23" font-family="'JetBrains Mono', 'Fira Code', monospace"
+            font-weight="700" font-size="11" fill="#f97316" text-anchor="middle">ENTERPRISE READY</text>
+    </g>
+    <g transform="translate(915, 0)" filter="url(#glowSoft)">
       <rect x="0" y="0" width="150" height="34" rx="17" fill="url(#goldGradient)" opacity="0.15" stroke="url(#goldGradient)" stroke-width="2"/>
       <text x="75" y="23" font-family="'JetBrains Mono', 'Fira Code', monospace"
-            font-weight="700" font-size="12" fill="url(#goldGradient)" text-anchor="middle">18 PROJECTS</text>
+            font-weight="700" font-size="11" fill="url(#goldGradient)" text-anchor="middle">OPEN TO WORK</text>
     </g>
   </g>
 
-  <g transform="translate(100, 225)" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="13" font-weight="600">
-    <g>
+  <g transform="translate(0, 225)" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="13" font-weight="600">
+    <g transform="translate(185, 0)">
       <text x="0" y="0" fill="#ef4444">5</text>
       <text x="16" y="0" fill="#64748b">  Cybersecurity</text>
     </g>
-    <g transform="translate(160, 0)">
+    <g transform="translate(505, 0)">
       <text x="0" y="0" fill="#a855f7">6</text>
       <text x="16" y="0" fill="#64748b">  Local-First AI</text>
     </g>
-    <g transform="translate(320, 0)">
+    <g transform="translate(825, 0)">
       <text x="0" y="0" fill="#22c55e">3</text>
-      <text x="16" y="0" fill="#64748b">  Data Ops &amp;   MCP</text>
+      <text x="16" y="0" fill="#64748b">  Data Ops &amp; MCP</text>
     </g>
-    <g transform="translate(480, 0)">
+    <g transform="translate(1125, 0)">
       <text x="0" y="0" fill="#f97316">5</text>
       <text x="16" y="0" fill="#64748b">  Back-End APIs</text>
     </g>
-    <g transform="translate(640, 0)">
-      <text x="0" y="0" fill="#fbbf24">18</text>
+    <g transform="translate(1280, 0)">
+      <text x="0" y="0" fill="#fbbf24">19</text>
       <text x="28" y="0" fill="#64748b">  Total Projects</text>
     </g>
   </g>
 
-  <g transform="translate(0, 395)">
-    <rect x="0" y="0" width="1440" height="25" fill="url(#bgGradient)" opacity="0.5"/>
-    <rect x="0" y="0" width="1440" height="3" fill="url(#cyanGradient)" opacity="0.6">
+  <g transform="translate(0, 400)">
+    <rect x="0" y="0" width="1440" height="20" fill="url(#bgGradient)" opacity="0.5"/>
+    <rect x="0" y="0" width="1440" height="2" fill="url(#cyanGradient)" opacity="0.6">
       <animate attributeName="opacity" values="0.6;1;0.6" dur="4s" repeatCount="indefinite"/>
     </rect>
-    <rect x="0" y="22" width="1440" height="3" fill="url(#purpleGradient)" opacity="0.4">
+    <rect x="0" y="18" width="1440" height="2" fill="url(#purpleGradient)" opacity="0.4">
       <animate attributeName="opacity" values="0.4;0.8;0.4" dur="4s" repeatCount="indefinite"/>
     </rect>
   </g>
 
-  <g opacity="0.35">
-    <rect x="40" y="60" width="4" height="280" fill="url(#cyanGradient)" rx="2">
-      <animate attributeName="height" values="280;200;280" dur="5s" repeatCount="indefinite"/>
+  <g opacity="0.25">
+    <rect x="20" y="140" width="3" height="180" fill="url(#cyanGradient)" rx="1.5">
+      <animate attributeName="height" values="180;120;180" dur="5s" repeatCount="indefinite"/>
     </rect>
-    <rect x="1396" y="80" width="4" height="260" fill="url(#purpleGradient)" rx="2">
-      <animate attributeName="height" values="260;180;260" dur="4.5s" repeatCount="indefinite"/>
+    <rect x="1417" y="140" width="3" height="180" fill="url(#purpleGradient)" rx="1.5">
+      <animate attributeName="height" values="180;120;180" dur="4.5s" repeatCount="indefinite"/>
     </rect>
   </g>
 
-  <g opacity="0.02" stroke="#00f5ff" stroke-width="1">
-    <line x1="0" y1="100" x2="1440" y2="100">
-      <animate attributeName="y1" values="100;420;100" dur="8s" repeatCount="indefinite"/>
-      <animate attributeName="y2" values="100;420;100" dur="8s" repeatCount="indefinite"/>
+  <g opacity="0.015" stroke="#00f5ff" stroke-width="1">
+    <line x1="0" y1="120" x2="1440" y2="120">
+      <animate attributeName="y1" values="120;420;120" dur="10s" repeatCount="indefinite"/>
+      <animate attributeName="y2" values="120;420;120" dur="10s" repeatCount="indefinite"/>
     </line>
-    <line x1="0" y1="250" x2="1440" y2="250">
-      <animate attributeName="y1" values="250;420;250" dur="10s" repeatCount="indefinite"/>
-      <animate attributeName="y2" values="250;420;250" dur="10s" repeatCount="indefinite"/>
+    <line x1="0" y1="280" x2="1440" y2="280">
+      <animate attributeName="y1" values="280;420;280" dur="12s" repeatCount="indefinite"/>
+      <animate attributeName="y2" values="280;420;280" dur="12s" repeatCount="indefinite"/>
     </line>
-  </g>
-
-  <g transform="translate(100, 300)" filter="url(#glowSoft)">
-    <rect x="0" y="0" width="220" height="28" rx="14" fill="#0f172a" stroke="#22c55e" stroke-width="2" opacity="0.95"/>
-    <text x="110" y="19" font-family="'JetBrains Mono', 'Fira Code', monospace"
-          font-weight="700" font-size="11" fill="#22c55e" text-anchor="middle">
-      <animate attributeName="opacity" values="1;0.4;1" dur="2s" repeatCount="indefinite"/>
-      ENTERPRISE READY
-    </text>
-  </g>
-
-  <g transform="translate(340, 300)" filter="url(#glowSoft)">
-    <rect x="0" y="0" width="180" height="28" rx="14" fill="#0f172a" stroke="#fbbf24" stroke-width="2" opacity="0.95"/>
-    <text x="90" y="19" font-family="'JetBrains Mono', 'Fira Code', monospace"
-          font-weight="700" font-size="11" fill="#fbbf24" text-anchor="middle">
-      <animate attributeName="opacity" values="1;0.4;1" dur="2.5s" repeatCount="indefinite"/>
-      OPEN TO WORK
-    </text>
   </g>
 </svg>
